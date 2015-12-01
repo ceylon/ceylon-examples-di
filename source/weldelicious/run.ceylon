@@ -8,16 +8,14 @@ import org.jboss.weld.environment.se {
 
 shared void run() {
     
-    value weld = Weld();
-    value container = weld.initialize();
+    value container = Weld().initialize();
     
     value sender 
-            = container.instance()
-                .select(type<Sender>())
+            = container.select(type<Sender>())
                 .get();
     
     sender.send();
     
-    weld.shutdown();
+    container.shutdown();
     
 }
