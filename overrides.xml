@@ -3,6 +3,7 @@
      This module overrides file is unnecessary  
      if the project is compiled and run using 
      the "auto export maven dependencies" flag.
+     
 -->
 <overrides xmlns="http://www.ceylon-lang.org/xsd/overrides">
     <!-- Needed for Guice -->
