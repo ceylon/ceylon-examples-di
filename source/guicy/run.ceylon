@@ -1,6 +1,3 @@
-import ceylon.interop.java {
-    type = javaClass
-}
 import com.google.inject {
     AbstractModule,
     Guice {
@@ -13,15 +10,14 @@ Injector injector
         = createInjector(
     object extends AbstractModule() {
         shared actual void configure() {
-            bind(type<Receiver>())
-                    .to(type<PrintingReceiver>());
-            bind(type<Receiver>())
-                    .annotatedWith(Fancy())
-                    .to(type<FancyReceiver>());
+            bind(`Receiver`)
+                .to(`PrintingReceiver`);
+            bind(`Receiver`).annotatedWith(Fancy())
+                .to(`FancyReceiver`);
         }
     });
 
 shared void run() {
-    value sender = injector.getInstance(type<Sender>());
+    value sender = injector.getInstance(`Sender`);
     sender.send();
 }

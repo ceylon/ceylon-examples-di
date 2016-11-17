@@ -7,3 +7,6 @@ resource=resource
 encoding=UTF-8
 overrides=overrides.xml
 autoexportmavendependencies=false
+offline=false
+flatclasspath=false
+fullyexportmavendependencies=false
