@@ -3,6 +3,9 @@
 source=source
 resource=resource
 
+[runtool]
+compile=check
+
 [defaults]
 encoding=UTF-8
 overrides=overrides.xml

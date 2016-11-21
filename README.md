@@ -10,7 +10,9 @@ and [Guice][] in Ceylon.
 
 To compile and run the examples, you'll need to have either
 Ceylon IDE, or the [Ceylon command line distribution][download] 
-installed on your machine. Ceylon 1.3.1 is required.
+installed on your machine. Ceylon 1.3.1 is required. On the
+command line you can use the provided ceylonb command if you
+don't have Ceylon already installed.
 
 [download]: http://ceylon-lang.org/download
 
@@ -19,15 +21,15 @@ installed on your machine. Ceylon 1.3.1 is required.
 To compile the examples, either import this project into
 Ceylon IDE, or, in this directory, type:
 
-    ceylon compile
+    ./ceylonb compile
 
 ## Running the examples
 
 To run the Weld example, in this directory, type:
 
-    ceylon run weldelicious
+    ./ceylonb run weldelicious
 
 To run the Guice example, in this directory, type:
 
-    ceylon run guicy
+    ./ceylonb run guicy
     
