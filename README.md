@@ -6,9 +6,11 @@ and [Guice][] in Ceylon.
 [Weld]: http://weld.cdi-spec.org
 [Guice]: https://github.com/google/guice
 
+## Requirements
+
 To compile and run the examples, you'll need to have either
 Ceylon IDE, or the [Ceylon command line distribution][download] 
-installed on your machine:
+installed on your machine. Ceylon 1.3.1 is required.
 
 [download]: http://ceylon-lang.org/download
 
