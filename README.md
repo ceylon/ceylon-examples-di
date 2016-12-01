@@ -30,4 +30,18 @@ To run the Weld example, in this directory, type:
 To run the Guice example, in this directory, type:
 
     ceylon run guicy
+
+## Running the examples using plain Java
+
+To assemble and then run a fat jar containing the Weld 
+example, in this directory, type:
+
+    ceylon fat-jar weldelicious
+    java -jar weldelicious-1.0.0.jar
+
+To assemble and then run a fat jar containing the Guice 
+example, in this directory, type:
+
+    ceylon fat-jar guicy
+    java -jar guicy-1.0.0.jar
     
