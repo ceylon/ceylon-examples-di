@@ -7,20 +7,20 @@
 -->
 <overrides xmlns="http://www.ceylon-lang.org/xsd/overrides">
     <!-- Needed for Guice -->
-    <module groupId="com.google.inject" 
+    <!-- module groupId="com.google.inject"
          artifactId="guice" 
             version="4.0">
         <share groupId="javax.inject" 
             artifactId="javax.inject"/>
-    </module>
+    </module-->
     <!-- Only needed to resolve a conflict when Guice and
          Weld are included in the same project. -->
-    <module groupId="org.jboss.weld.se" 
+    <!--module groupId="org.jboss.weld.se"
          artifactId="weld-se" 
             version="2.3.1.Final">
         <add groupId="javax.inject" 
           artifactId="javax.inject"
              version="1"
               shared="true"/>
-    </module>
+    </module-->
 </overrides>
