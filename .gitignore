@@ -2,4 +2,5 @@
 modules
 .idea/libraries/*
 *-1.0.0.jar
+*-1.0.0.cas
 classes

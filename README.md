@@ -10,9 +10,12 @@ and [Guice][] in Ceylon.
 
 To compile and run the examples, you'll need to have either
 Ceylon IDE, or the [Ceylon command line distribution][download] 
-installed on your machine. Ceylon 1.3.1 is required. On the
-command line you can use the provided ceylonb command if you
-don't have Ceylon already installed.
+installed on your machine. Ceylon 1.3.3 is required. On the
+command line you can use the provided `ceylonb` command if 
+you don't have Ceylon already installed. If you *do* already
+have the Ceylon command line tools installed, you can type
+`ceylon` instead of `./ceylonb` in the following 
+instructions. 
 
 [download]: http://ceylon-lang.org/download
 
@@ -46,3 +49,17 @@ example, in this directory, type:
 
     ./ceylonb fat-jar guicy
     java -jar guicy-1.0.0.jar
+
+## Running the examples using Ceylon assemblies
+
+To assemble and then run a `.cas` archive  containing the 
+Weld example, in this directory, type:
+
+    ./ceylonb assemble weldelicious
+    ceylon run -a weldelicious-1.0.0.case
+
+To assemble and then run a `.cas` archive  containing the 
+Guice example, in this directory, type:
+
+    ./ceylonb assemble guicy
+    ceylon run -a guicy-1.0.0.case
