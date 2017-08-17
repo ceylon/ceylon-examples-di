@@ -9,15 +9,15 @@
     <!-- Needed for Guice -->
     <module groupId="com.google.inject" 
          artifactId="guice" 
-            version="4.0">
+            version="4.1.0">
         <share groupId="javax.inject" 
             artifactId="javax.inject"/>
     </module>
     <!-- Only needed to resolve a conflict when Guice and
          Weld are included in the same project. -->
-    <module groupId="org.jboss.weld.se" 
-         artifactId="weld-se" 
-            version="2.3.1.Final">
+    <module groupId="org.jboss.weld.se"
+         artifactId="weld-se-shaded"
+            version="3.0.0.Final">
         <add groupId="javax.inject" 
           artifactId="javax.inject"
              version="1"
