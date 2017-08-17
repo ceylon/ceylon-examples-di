@@ -56,10 +56,10 @@ To assemble and then run a `.cas` archive  containing the
 Weld example, in this directory, type:
 
     ./ceylonb assemble weldelicious
-    ceylon run -a weldelicious-1.0.0.case
+    ceylon run -a weldelicious-1.0.0.cas
 
 To assemble and then run a `.cas` archive  containing the 
 Guice example, in this directory, type:
 
     ./ceylonb assemble guicy
-    ceylon run -a guicy-1.0.0.case
+    ceylon run -a guicy-1.0.0.cas
