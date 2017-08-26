@@ -20,5 +20,9 @@
           artifactId="javax.inject"
              version="1"
               shared="true"/>
+        <!-- Not needed, but helps Weld start up faster. -->
+        <add groupId="org.jboss"
+             artifactId="jandex"
+             version="2.0.3.Final"/>
     </module>
 </overrides>
