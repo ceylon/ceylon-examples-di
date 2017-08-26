@@ -17,7 +17,5 @@ Injector injector
         }
     });
 
-shared void run() {
-    value sender = injector.getInstance(`Sender`);
-    sender.send();
-}
+shared void run()
+        => injector.getInstance(`Sender`).send();
